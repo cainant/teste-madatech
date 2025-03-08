@@ -1,4 +1,4 @@
-FROM php:8.4-apache
+FROM jpruiz114/composer-php-8.4-apache-plus-dependencies:latest
 
 RUN docker-php-ext-install pdo pdo_mysql mysqli
 RUN apt update && apt install libicu-dev -y

@@ -19,3 +19,13 @@ $routes->group('tasks', function ($routes) {
     $routes->get('delete/(:num)', 'Task::delete/$1');
 });
 
+$routes->group('api/tasks', function ($routes) {
+    $routes->get('/', 'ApiTask::index');
+
+    $routes->post('create', 'ApiTask::create');
+
+    $routes->put('edit/(:num)', 'ApiTask::edit/$1');
+
+    $routes->delete('delete/(:num)', 'ApiTask::delete/$1');
+});
+

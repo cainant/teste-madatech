@@ -47,7 +47,7 @@
 					"script": {
 						"exec": [
 							"let response = pm.response.json();",
-							"pm.environment.set('id', response.id);"
+							"pm.globals.set('id', response.id);"
 						],
 						"type": "text/javascript",
 						"packages": {}

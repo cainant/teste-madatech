@@ -4,7 +4,6 @@ namespace App\Controllers;
 
 use App\Models\TaskModel;
 use CodeIgniter\API\ResponseTrait;
-use CodeIgniter\Exceptions\PageNotFoundException;
 use CodeIgniter\RESTful\ResourceController;
 
 class ApiTask extends ResourceController
